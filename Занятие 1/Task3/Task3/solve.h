@@ -9,12 +9,14 @@ double* solve(double a, double b, double c)
 
 	if (a == 0 && b == 0 && c != 0)
 	{
+		setlocale(LC_ALL, "Russian");
 		std::cout << "Корней нет" << std::endl;
 		return NULL;
 	}
 
 	else if (a == 0 && b == 0 && c == 0)
 	{
+		setlocale(LC_ALL, "Russian");
 		std::cout << "Уравнение имеет бесконечное множество решений" << std::endl;
 		return NULL;
 	}

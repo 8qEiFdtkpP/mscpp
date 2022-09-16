@@ -10,6 +10,11 @@ int main()
 
 	double* res = solve(a, b, c);
 
+	if (res == NULL) 
+	{
+		return 0;
+	}
+
 	double x1r = res[0];
 	double x1i = res[1];
 	double x2r = res[2];
