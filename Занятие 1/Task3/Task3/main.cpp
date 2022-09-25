@@ -2,15 +2,21 @@
 #include "sqrt.h"
 #include "solve.h"
 
-int main()
+int main(int argc, char* argv[4])
 {
-	double a = 1;
-	double b = -16;
-	double c = 100;
+	const char* aStr = argv[1];
+	const char* bStr = argv[2];
+	const char* cStr = argv[3];
+
+	double a = (aStr == NULL || strlen(aStr) < 1) ? 0 : std::atof(aStr);
+	double b = (bStr == NULL || strlen(bStr) < 1) ? 0 : std::atof(bStr);
+	double c = (cStr == NULL || strlen(cStr) < 1) ? 0 : std::atof(cStr);
+
+	std::cout << "a = " << a << "; b = " << b << "; c = " << c << std::endl;
 
 	double* res = solve(a, b, c);
 
-	if (res == NULL) 
+	if (res == NULL)
 	{
 		return 0;
 	}
