@@ -26,7 +26,7 @@ int main(int argc, char* argv[4])
 	double x2r = res[2];
 	double x2i = res[3];
 
-	if (x1i == 0 || x2i == 0)
+	if (x1i == 0 && x2i == 0)
 	{
 		if (x1r != x2r)
 		{
