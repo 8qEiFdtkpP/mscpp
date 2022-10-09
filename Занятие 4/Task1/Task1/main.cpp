@@ -4,10 +4,10 @@
 #include "Queue.h"
 
 /// <summary>
-/// Печатает содержимое очереди.
+/// РџРµС‡Р°С‚Р°РµС‚ СЃРѕРґРµСЂР¶РёРјРѕРµ РѕС‡РµСЂРµРґРё.
 /// </summary>
-/// <typeparam name="T">Тип данных, хранящихся в очереди.</typeparam>
-/// <param name="q">Печатаемая очередь.</param>
+/// <typeparam name="T">РўРёРї РґР°РЅРЅС‹С…, С…СЂР°РЅСЏС‰РёС…СЃСЏ РІ РѕС‡РµСЂРµРґРё.</typeparam>
+/// <param name="q">РџРµС‡Р°С‚Р°РµРјР°СЏ РѕС‡РµСЂРµРґСЊ.</param>
 template <typename T>
 void PrintQueue(Queue<T> q)
 {
@@ -29,7 +29,7 @@ int main()
 {
 	Queue<int> q;
 
-	// Тестирование вставки в очередь.
+	// РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ РІСЃС‚Р°РІРєРё РІ РѕС‡РµСЂРµРґСЊ.
 	for (int i = 0; i < 5; i++)
 	{
 		q.Push(i);
@@ -41,7 +41,7 @@ int main()
 
 	PrintQueue(q);
 
-	// Тестирование удаления из очереди.
+	// РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ СѓРґР°Р»РµРЅРёСЏ РёР· РѕС‡РµСЂРµРґРё.
 	for (size_t i = 0; i < 4; i++)
 	{
 		q.Pop();
@@ -57,7 +57,7 @@ int main()
 
 	PrintQueue(q);
 
-	// Тестирование элемента очереди.
+	// РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ СЌР»РµРјРµРЅС‚Р° РѕС‡РµСЂРµРґРё.
 	Node<int*> nodeInt1(NULL, NULL, NULL);
 	assert(nodeInt1.value == NULL && "Node1's value is not NULL");
 	assert(nodeInt1.prev == NULL && "Node1's prev is not NULL");
