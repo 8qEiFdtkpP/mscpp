@@ -145,7 +145,7 @@ public:
 	}
 
 	/// <summary>
-	/// Оператор присваивания перемещениемю
+	/// Оператор присваивания перемещением.
 	/// </summary>
 	/// <param name="other">Перемещаемая очередь.</param>
 	/// <returns>Полученная после выполнения перемещения очередь.</returns>
@@ -198,7 +198,7 @@ public:
 	/// <summary>
 	/// Возвращает первый элемент очереди (nullptr exception, если очередь пуста).
 	/// </summary>
-	/// <returns></returns>
+	/// <returns>Первый элемент очереди (nullptr exception, если очередь пуста).</returns>
 	T GetFront()
 	{
 		return head->value;
@@ -207,7 +207,7 @@ public:
 	/// <summary>
 	/// Возвращает последний элемент очереди (nullptr exception, если очередь пуста).
 	/// </summary>
-	/// <returns></returns>
+	/// <returns>Последний элемент очереди (nullptr exception, если очередь пуста).</returns>
 	T GetBack()
 	{
 		return tail->value;

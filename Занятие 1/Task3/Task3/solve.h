@@ -2,6 +2,14 @@
 #include <iostream>
 #include "sqrt.h"
 
+/// <summary>
+/// Решает квадратное уравнение с заданными вещественными коэффициентами.
+/// </summary>
+/// <param name="a">Коэффициент при x^2.</param>
+/// <param name="b">Коэффициент при x.</param>
+/// <param name="c">Свободный член уравнения.</param>
+/// <returns>Решения уравнения x1 и x2 с вещественными и комплексными значениями 
+/// x1 + x1i и x2 + x2i.</returns>
 double* solve(double a, double b, double c)
 {
 	double x1r, x2r;
@@ -10,14 +18,14 @@ double* solve(double a, double b, double c)
 	if (a == 0 && b == 0 && c != 0)
 	{
 		setlocale(LC_ALL, "Russian");
-		std::cout << "������ ���" << std::endl;
+		std::cout << "Корней нет" << std::endl;
 		return NULL;
 	}
 
 	else if (a == 0 && b == 0 && c == 0)
 	{
 		setlocale(LC_ALL, "Russian");
-		std::cout << "��������� ����� ����������� ��������� �������" << std::endl;
+		std::cout << "Уравнение имеет бесконечное множество решений" << std::endl;
 		return NULL;
 	}
 
